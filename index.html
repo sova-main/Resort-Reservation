@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>Resort</title>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <div class="logo">
+                <h1><a href="home">the resort</a></h1>
+                <p>It's always summer at our resort</p>
+            </div>
+            <nav class="navbar">
+                <a href="home">home</a>
+                <a href="offers">offers</a>
+                <a href="faq">FAQ</a>
+                <a href="contact">contact us</a>
+                <a href="login">login</a>
+            </nav>
+            <div class="fas fa-bars" id="menu-btn">
+
+            </div>
+        </header>
+        <section class="hero">
+            <div class="box-container">
+                <h1>Your Dream Vacation Starts Here</h1>
+                <p>Experience the ultimate in luxury and relaxation with our hand-selected collection of world-class resorts.  Let us take care of the details and tailor your dream vacation, while you sit back, relax, and create unforgettable memories. Book your stay with us today and embark on a journey of indulgence and adventure.</p>
+                <h3>book your escape now!</h3>
+            </div>
+            
+            <div class="formBox">
+                <p>When would you like to stay?</p> 
+                <form action="">
+                    <div class="inputBox">
+                        <label for="date-checkin">Check-in: </label>
+                        <input type="date" id="date-checkin" name="date">
+                    </div>
+                    <div class="inputBox">
+                        <label for="date-checkout">Check-out: </label>
+                        <input type="date" id="date-checkout" name="date">
+                    </div>
+                    
+                    <div class="inputBox">
+                        <i class="fa-solid fa-user"></i>
+                        <label for="numGuest">No. of adults: </label>
+                        <select name="numGuest" id="numGuest">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="1">5</option>
+                            <option value="2">6</option>
+                            <option value="3">7</option>
+                            <option value="4">8</option>
+                            <option value="3">9</option>
+                            <option value="4">10</option>
+                          </select>
+                    </div>
+                    <div class="inputBox">
+                        <i class="fa-solid fa-user"></i>
+                        <label for="numGuest">No. of children: </label>
+                        <select name="numGuest" id="numGuest">
+                            <option value="1">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="1">5</option>
+                            <option value="2">6</option>
+                            <option value="3">7</option>
+                            <option value="4">8</option>
+                            <option value="3">9</option>
+                            <option value="4">10</option>
+                          </select>
+                    </div>
+                    <input type="button" name="submit" value="Book now" class="btn">
+                </form>    
+            </div>
+        </section>
+        <section class="resort">
+            <h1 class="title">pictures</h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="/images/Resort image/entrance.jpg" alt="">
+                    <h3>main entrance</h3>
+                    <p>Lorem ipsum dolor sit amet, quam lacus, gravida molestie integer.</p>
+                </div>
+                <div class="box">
+                    <img src="/images/Resort image/pool.jpg" alt="">
+                    <h3>main pool</h3>
+                    <p>Elit mi ipsum, sit luctus et, pede impedit vestibulum.</p>
+                </div>
+                <div class="box">
+                    <img src="/images/Resort image/Room.jpeg" alt="">
+                    <h3>room</h3>
+                    <p>A velit et, mattis id. Velit risus malesuada, ornare porta, a quis pede. Pulvinar donec. Elementum ullamcorper, magna morbi porta.</p>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="/offers">see more</a>
+            </div>
+        </section>
+        <section class="register">
+            <div class="box-container">
+                <div class="register-title">
+                    <h1>Start your venture here</h1>
+                    <p>register for your dream vacation.</p>
+                </div>
+                <div class="register-form">
+                    <h3>registration form</h1>
+                    <form action="" method="post">
+                        <div class="inputBox">
+                            <input type="text" required="required"> 
+                            <span>Full name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="number" required="required"> 
+                            <span>Contact number</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" required="required"> 
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" required="required"> 
+                            <span>Password</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" required="required"> 
+                            <span>Confirm Password</span>
+                        </div>
+                        <div class="btn-link">
+                            <div class="btnClass">
+                                <button class="btn">Submit</button>
+                                <button class="btn">Reset</button>
+                            </div>
+                            <div class="link">
+                                <a href="">Already have an account?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <h1 class="title">reviews</h1>
+            <div class="swiper-wrapper box-container">
+                <div class="swiper-slide box">
+                    <h3>Mr. Bean</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, quam lacus, gravida molestie integer. Elit mi ipsum, sit luctus et, pede impedit vestibulum. A velit et, mattis id. Velit risus malesuada, ornare porta, a quis pede. Pulvinar donec. Elementum ullamcorper, magna morbi porta.</p>
+                </div>
+                <div class="swiper-slide box">
+                    <h3>Mr. Bean</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, quam lacus, gravida molestie integer. Elit mi ipsum, sit luctus et, pede impedit vestibulum. A velit et, mattis id. Velit risus malesuada, ornare porta, a quis pede. Pulvinar donec. Elementum ullamcorper, magna morbi porta.</p>
+                </div>
+                <div class="swiper-slide box">
+                    <h3>Mr. Bean</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, quam lacus, gravida molestie integer. Elit mi ipsum, sit luctus et, pede impedit vestibulum. A velit et, mattis id. Velit risus malesuada, ornare porta, a quis pede. Pulvinar donec. Elementum ullamcorper, magna morbi porta.</p>
+                </div>
+            </div>
+        </section>
+        <section class="location">
+            <div class="box-container">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.2111476253117!2d120.98259631527898!3d14.587040981318529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca21ac302015%3A0x92dcca0f915010d9!2sTechnological%20University%20of%20the%20Philippines%20-%20Manila!5e0!3m2!1sen!2sph!4v1676819521327!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="details">
+                    <h1>RESORT LOCATION AND MAP</h1>
+                    <p class="address">Technological University Of The Philippines - Manila, Ayala Boulevard, Ermita, Manila, Metro Manila</p>
+                    <p>For private cars, you can find us on google map by clicking <a href="">here</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="amenities">
+            <h1 class="title">amenities</h1>
+            <div class="box-container">
+                <div class="box">
+                    <h3>Entertainement</h3>
+                    <p>Lorem ipsum dolor sit amet, dolor tincidunt elit curabitur. Elit odio integer nam, dapibus vitae nibh etiam mi iaculis lorem, aliquam nullam nulla in nobis in facilisis, erat non vitae diam, sed a at proin. Tristique metus lorem parturient et.</p>
+                </div>
+                <div class="box">
+                    <h3>Policies</h3>
+                    <p>Lorem ipsum dolor sit amet, nec voluptatem penatibus, lectus cras eu vitae consequat. Nisl velit, vitae vel sit felis, ut vitae aliquet at eu, ornare dis. Ante ut amet mauris, amet suscipit massa mi magnis.</p>
+                </div>
+                <div class="box">
+                    <h3>Natoque</h3>
+                    <p>Lorem ipsum dolor sit amet, laoreet ac rerum lorem vel malesuada, nulla cras. Nibh sed cum proin, eget amet lectus id nec at, tincidunt aptent cursus dignissim, vel tincidunt venenatis est vulputate, cras class lacinia in nec ut. Ac volutpat potenti.</p>
+                </div>
+                <div class="box">
+                    <h3>Tincidunt</h3>
+                    <p>Lorem ipsum dolor sit amet, ipsum velit sapien sed pulvinar parturient dapibus, cursus eros imperdiet suspendisse ac non. Euismod eu phasellus, accumsan ante, mauris ridiculus nunc proin lectus ultrices, maecenas fusce nec est. Cras eget ac wisi phasellus pellentesque.</p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="box-container">
+                <h3>Follow us on our social media</h3>
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <p>© Best Resort <span id="year"></span>. All right Reserved.</p>
+            </div>  
+        </footer>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".reviews", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+    });
+  </script>
+<script src="js/script.js"></script>
+</html>

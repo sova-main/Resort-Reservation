@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,700&display=swap');
+
+/* background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);  */
+
+
+:root{
+    --title: #FBAB7E;
+    --hover: #ff843d;
+    --gradient: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --black: #000;
+    --white: #fff;
+    --border: .2rem solid rgba(0, 0, 0, .1);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--white);
+}
+
+section{
+    padding: 2rem 18%;
+}
+
+/* ------------------------------------- HEADER START -------------------------------------*/
+header{
+    padding: 2rem 18%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a{
+    color: var(--title);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+}
+
+header .logo p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+}
+
+.title{
+    color: var(--title);
+    text-transform: uppercase;
+    margin: 3rem 0;
+    font-size: 4rem;
+    letter-spacing: .5rem;
+}
+
+header .navbar a{
+    color: var(--black);
+    text-transform: capitalize;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    transition: .2s;
+    padding: 10px 20px;
+}
+
+header .navbar a:hover{
+    color: var(--white);
+    background-color: var(--title);
+}
+
+#menu-btn{
+    display: none;
+}
+/* ------------------------------------- HEADER ENDS -------------------------------------*/
+/* ------------------------------------- HERO STARTS -------------------------------------*/
+.hero{
+    background-image: url("/images/hero/Hero\ 1.jpg");
+    background-size: cover;
+    height: 700px;
+    background-repeat: no-repeat;
+}
+
+.hero .box-container{
+    margin: 15rem 0;
+    width: 50%;
+}
+
+.hero .box-container h1{
+    color: var(--white);
+    font-size: 5.5rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.hero .box-container p{
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 200;
+    width: 75%;
+    line-height: 2rem;
+    letter-spacing: .15rem;
+    margin-bottom: 1rem;
+}
+
+.hero .box-container h3{
+    color: var(--white);
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+
+
+.hero .formBox{
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem 4rem;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top:40px;
+}
+
+.hero .formBox p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+
+}
+
+.hero form{
+    /* position: relative;
+    top: 40px;  */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* margin: 0 auto;
+    padding: 2rem 4rem;
+    width: 80%; */
+    /* background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+     */
+}
+
+.hero form .inputBox{
+    margin: 0 1rem;
+    border: var(--border);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.hero form .btn{
+    margin: 0 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    color: var(--white);
+    background-color: var(--title);
+    cursor: pointer;
+}
+
+.hero form .btn:hover{
+    background-color: var(--hover);
+}
+
+/* ------------------------------------- HERO ENDS -------------------------------------*/
+
+/* ------------------------------------- ROOMS START -------------------------------------*/
+.resort h1{
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.resort .box-container{
+    padding: 0 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.resort .box-container .box{
+    padding: 3rem 2rem;
+    box-shadow: var(--box-shadow)
+    
+}
+
+.resort .box-container .box img{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.resort .box-container .box h3{
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 2rem;
+}
+
+.resort .box-container .box p{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.resort .view-more{
+    text-align: center;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    
+}
+
+.resort .view-more a{
+    font-size: 1.5rem;
+    color: var(--white);
+    padding: 1rem 2rem;
+    background-color: var(--title);
+    border-radius: 2rem;
+    text-transform: capitalize;
+}
+
+.resort .view-more a:hover{
+    background-color: var(--hover);
+}
+
+
+/* ------------------------------------- ROOMS ENDS -------------------------------------*/
+
+/* ------------------------------------- REGISTER STARTS -------------------------------------*/
+.register{
+    background-color: var(--title);
+    background-image: var(--gradient);
+}
+
+.register .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.register .box-container .register-title{
+    flex: 1 1 40rem;
+}
+
+.register .box-container .register-title h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.register .box-container .register-title p{
+    font-weight: 300;
+    font-size: 2rem;
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.register .box-container .register-form{
+    flex: 1 1 20rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.register .box-container .register-form h3{
+    color: var(--white);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.register .box-container .register-form .inputBox{
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+
+.register .box-container .register-form .inputBox input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255, .8);
+    background: transparent;
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.register .box-container .register-form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 12px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgb(255, 255, 255, .6);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.register .box-container .register-form .inputBox input:valid ~ span,
+.register .box-container .register-form .inputBox input:focus ~ span{
+    color: var(--white);
+    transform: translateX(10px) translateY(-5px);
+    font-size: .8rem;
+    padding: 0 5px;
+    background: #F9BB74;
+    border-left: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+.register .box-container .register-form .inputBox input::-webkit-outer-spin-button,
+.register .box-container .register-form .inputBox input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.register .box-container .register-form .btn-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register .box-container .register-form .btn-link .btnClass .btn{
+    margin-right: 1.5rem;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    color: var(--white);
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    background-color: rgb(255, 255, 255, .2);
+    cursor: pointer;
+}
+
+.register .box-container .register-form .btn-link .btnClass .btn:hover{
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.register .box-container .register-form .btn-link .link a{
+    color: var(--white);
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+/* ------------------------------------- REGISTER ENDS -------------------------------------*/
+
+/* ------------------------------------- LOCAATION START -------------------------------------*/
+.location .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.location .map{
+    flex: 1 1 40rem;
+    padding: 3rem;
+}
+
+.location .map iframe{
+    width: 100%;
+    border-radius: 1rem;   
+    box-shadow: var(--box-shadow);
+}
+
+.location .details{
+    flex: 1 1 15rem;
+    text-align: right;
+}
+
+.location .details h1{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--title);
+    letter-spacing: .2rem;
+}
+
+.location .details .address{
+    font-size: 2rem;
+}
+
+.location .details p{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+/* ------------------------------------- LOCATION ENDS -------------------------------------*/
+/* ------------------------------------- REVIEWS STARTS -------------------------------------*/
+.reviews h1{
+    text-align: center;
+}
+
+.reviews .box-container .box{
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.reviews .box-container .box h3{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.reviews .box-container .box .stars{
+    color: var(--title);
+    font-size: 1.5rem;
+}
+.reviews .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+/* ------------------------------------- REVIEWS ENDS -------------------------------------*/
+
+/* ------------------------------------- AMENITIES STARTS -------------------------------------*/
+.amenities{
+    background-color: var(--title);
+    background-image: var(--gradient);
+    color: var(--white);
+}
+
+.amenities h1{
+    text-align: center;
+    color: var(--white);
+}
+
+.amenities .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 2rem;
+    padding-bottom: 2rem;
+
+}  
+
+.amenities .box-container .box{
+    margin: 2rem;
+}
+
+.amenities .box-container .box h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.amenities .box-container .box p{
+    font-size: 2rem;
+    line-height: 1;
+
+}
+
+
+/* ------------------------------------- AMENITIES ENDS -------------------------------------*/
+
+/* ------------------------------------- FOOTER STARTS -------------------------------------*/
+.footer{
+    text-align: center;
+    background: #fff;
+}
+
+.footer .box-container{
+    padding: 2rem 0;
+}
+
+.footer h3{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.footer .icons a i{
+    font-size: 4rem;
+    margin: 0 2rem;
+    color: var(--title);
+}
+
+.footer .icons a i:hover{
+    color: var(--hover);
+}
+
+.footer p{
+    margin-top: 3.5rem;
+    font-size: 1.5rem;
+}
+/* ------------------------------------- FOOTER ENDS -------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1600px){
+    html{
+        font-size: 55%;
+    }
+   .hero .formBox{
+        top: -50px;
+   }
+}
+
+
+
+@media (max-width: 1200px) {
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem 5rem;
+    }
+
+    section{
+        padding: 5rem;
+    }
+} 
+
+
+
+
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+
+
+    section{
+        padding: 2rem;
+    }
+} 
+
+
+
+
+
+
+@media (max-width: 768px) {
+    section{
+        padding: 2rem;
+    }
+    #menu-btn{
+        display: inline-block;
+        font-size: 2rem;
+        color: var(--title);
+        cursor: pointer;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 5%;
+        right: -500%;
+        width: 20rem;
+        background: var(--white);
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+    }
+
+    .header .navbar.active{
+        right: 5%;
+        transition: .2s linear;
+    }
+
+    .header .navbar a{
+        display: block;
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .hero .box-container{
+        display: block;
+        margin: 5rem auto;
+    }
+
+    .hero .box-container, .hero .box-container p{
+        width: 100%;
+    }
+
+
+    .hero .formBox{
+        margin: 3rem auto;
+        width: 90%;
+        top: 0;
+    }
+
+    .hero .formBox form{
+        display: block;
+    }
+
+    .hero form .inputBox{
+        margin: 1rem 0;
+    }
+
+    .hero form .btn{
+        margin: 0;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+    html{
+        font-size: 45%;
+    }
+
+    .header{
+        padding: 2rem;
+    }
+
+    .heading{
+        font-size: 2.5rem;
+    }
+
+    .resort .box-container{
+        padding: 0;
+    }
+
+    .resort h1{
+        margin: 0;
+    }
+
+    .location .details{
+        text-align: left;
+        margin: 2rem 3rem;
+    }
+} 
