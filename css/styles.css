@@ -90,7 +90,7 @@ header .navbar a:hover{
 /* ------------------------------------- HEADER ENDS -------------------------------------*/
 /* ------------------------------------- HERO STARTS -------------------------------------*/
 .hero{
-    background-image: url("/images/hero/Hero\ 1.jpg");
+    background-image: url("../images/hero.jpg");
     background-size: cover;
     height: 700px;
     background-repeat: no-repeat;
@@ -409,23 +409,22 @@ header .navbar a:hover{
     text-align: center;
 }
 
-.reviews .box-container .box{
+.reviews .review-slider .box{
+    outline: var(--border);
+    outline-offset: -1rem;
     cursor: pointer;
     margin: 0 auto;
     padding: 2rem;
     box-shadow: var(--box-shadow);
-}
-
-.reviews .box-container .box h3{
     font-size: 2rem;
     margin-bottom: 1.5rem;
 }
 
-.reviews .box-container .box .stars{
+.reviews .review-slider .box .stars{
     color: var(--title);
     font-size: 1.5rem;
 }
-.reviews .box-container .box p{
+.reviews .review-slider .box p{
     font-size: 1.5rem;
     line-height: 1.5;
 }
@@ -563,6 +562,7 @@ header .navbar a:hover{
     section{
         padding: 2rem;
     }
+    
     #menu-btn{
         display: inline-block;
         font-size: 2rem;
