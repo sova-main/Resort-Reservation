@@ -725,6 +725,7 @@ header .navbar a:hover{
 
     .resort .room-details{
         width: 100%;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .register .box-container .register-form .btn-link{
