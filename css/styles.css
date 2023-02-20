@@ -5,12 +5,12 @@ background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);  */
 
 
 :root{
-    --title: #FBAB7E;
-    --hover: #ff843d;
-    --gradient: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    --black: #242424;
+    --brown: #D19F74;
+    --white-bg: #F5F3F1;
+    --white: #F8FAFB;
+    --pure-white: rgb(251, 251, 251);
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    --black: #000;
-    --white: #fff;
     --border: .2rem solid rgba(0, 0, 0, .1);
 }
 
@@ -23,6 +23,7 @@ background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);  */
     outline: none;
     border: none;
     transition: all .2s linear;
+    
 }
 
 html{
@@ -33,10 +34,11 @@ html{
 
 body{
     background: var(--white);
+    color: var(--black);
 }
 
 section{
-    padding: 2rem 18%;
+    padding: 5rem 18%;
 }
 
 /* ------------------------------------- HEADER START -------------------------------------*/
@@ -64,7 +66,7 @@ header .logo p{
 .title{
     color: var(--title);
     text-transform: uppercase;
-    margin: 3rem 0;
+    margin-bottom: 3rem;
     font-size: 4rem;
     letter-spacing: .5rem;
 }
@@ -81,7 +83,7 @@ header .navbar a{
 
 header .navbar a:hover{
     color: var(--white);
-    background-color: var(--title);
+    background-color: var(--brown);
 }
 
 #menu-btn{
@@ -128,21 +130,20 @@ header .navbar a:hover{
 
 
 .hero .formBox{
-    background: #fff;
+    background-color: var(--pure-white);
     border-radius: 1rem;
     box-shadow: var(--box-shadow);
     padding: 2rem 4rem;
     width: 80%;
     margin: 0 auto;
     position: relative;
-    top:40px;
 }
 
 .hero .formBox p{
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: 500;
-
+    color: var(--black);
 }
 
 .hero form{
@@ -161,13 +162,22 @@ header .navbar a:hover{
 }
 
 .hero form .inputBox{
-    margin: 0 1rem;
     border: var(--border);
     border-radius: 1rem;
     padding: 1rem;
     display: block;
     text-transform: uppercase;
     font-weight: 500;
+    color: var(--black);
+}
+
+.hero form .inputBox i{
+    font-size: 1.2rem;
+    margin-right: .5rem;
+}
+
+.hero form .inputBox input::-webkit-calendar-picker-indicator{
+    cursor: pointer;
 }
 
 .hero form .btn{
@@ -175,12 +185,17 @@ header .navbar a:hover{
     padding: 1rem 1.5rem;
     border-radius: 2rem;
     color: var(--white);
-    background-color: var(--title);
+    background-color: var(--black);
     cursor: pointer;
+    transition: outline 0.2s ease-in-out;
+    
 }
 
 .hero form .btn:hover{
-    background-color: var(--hover);
+    outline: .5px solid var(--black);
+    transition: 0.2s ease-in-out;
+    background-color: var(--white);
+    color: var(--black);
 }
 
 /* ------------------------------------- HERO ENDS -------------------------------------*/
@@ -196,10 +211,13 @@ header .navbar a:hover{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
+    color: var(--black);
 }
 
 .resort .box-container .box{
     padding: 3rem 2rem;
+    border-radius: 1rem;
+    background-color: var(--pure-white);
     box-shadow: var(--box-shadow)
     
 }
@@ -222,25 +240,47 @@ header .navbar a:hover{
     margin-top: 1.5rem;
 }
 
+.resort .room-details{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    background-color: var(--white-bg);
+    width: 80%;
+    margin: 2rem auto;
+    border-radius: 2rem;
+}
+
+.resort .room-details .box{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2rem 4rem;
+}
+
+.resort .room-details .box i{
+    color: var(--brown);
+    margin-right: 1rem;
+}
+
 .resort .view-more{
     text-align: center;
     width: 100%;
-    padding-top: 5rem;
-    padding-bottom: 2rem;
-    
+    margin-top: 3rem;
 }
-
 .resort .view-more a{
     font-size: 1.5rem;
     color: var(--white);
     padding: 1rem 2rem;
-    background-color: var(--title);
+    background-color: var(--black);
     border-radius: 2rem;
     text-transform: capitalize;
+    transition: outline .2s ease-in-out;
 }
 
 .resort .view-more a:hover{
-    background-color: var(--hover);
+    outline: .5px solid var(--black);
+    background: var(--white);
+    color: var(--black);
+    transition: .2s ease-in-out;
 }
 
 
@@ -266,25 +306,29 @@ header .navbar a:hover{
 .register .box-container .register-title h1{
     font-size: 4rem;
     text-transform: uppercase;
-    color: var(--white);
+    color: var(--black);
     font-weight: 500;
 }
 
 .register .box-container .register-title p{
     font-weight: 300;
     font-size: 2rem;
-    color: var(--white);
+    color: var(--black);
     text-transform: capitalize;
 }
 
 .register .box-container .register-form{
-    flex: 1 1 20rem;
+    flex: 1 1 25rem;
     text-align: center;
     margin-bottom: 2.5rem;
+    background-color: var(--pure-white);
+    padding: 2rem 4rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
 }
 
 .register .box-container .register-form h3{
-    color: var(--white);
+    color: var(--black);
     font-weight: 500;
     text-transform: uppercase;
     font-size: 2rem;
@@ -301,10 +345,10 @@ header .navbar a:hover{
 .register .box-container .register-form .inputBox input{
     width: 100%;
     padding: 10px;
-    border: 1px solid rgb(255, 255, 255, .8);
+    border: 1px solid var(--black);
     background: transparent;
     border-radius: 5px;
-    color: var(--white);
+    color: var(--black);
     font-size: 1.5rem;
 }
 
@@ -314,20 +358,20 @@ header .navbar a:hover{
     padding: 12px;
     pointer-events: none;
     font-size: 1em;
-    color: rgb(255, 255, 255, .6);
+    color: var(--black);
     text-transform: uppercase;
     transition: 0.5s;
 }
 
 .register .box-container .register-form .inputBox input:valid ~ span,
 .register .box-container .register-form .inputBox input:focus ~ span{
-    color: var(--white);
+    color: var(--black);
     transform: translateX(10px) translateY(-5px);
     font-size: .8rem;
     padding: 0 5px;
-    background: #F9BB74;
-    border-left: 1px solid rgb(255, 255, 255);
-    border-right: 1px solid rgb(255, 255, 255);
+    background: var(--white);
+    border-left: 1px solid var(--black);
+    border-right: 1px solid var(--black);
 }
 
 .register .box-container .register-form .inputBox input::-webkit-outer-spin-button,
@@ -348,23 +392,27 @@ header .navbar a:hover{
     color: var(--white);
     text-transform: capitalize;
     letter-spacing: .1rem;
-    background-color: rgb(255, 255, 255, .2);
+    background-color: var(--black);
     cursor: pointer;
+    transition: outline 0.2s ease-in-out;
 }
 
 .register .box-container .register-form .btn-link .btnClass .btn:hover{
     color: var(--black);
+    outline: .5px solid var(--black);
+    transition: .2s ease-in-out;
     background-color: var(--white);
 }
 
 .register .box-container .register-form .btn-link .link a{
-    color: var(--white);
+    color: var(--black);
     font-size: 1.5rem;
     letter-spacing: .1rem;
 }
 /* ------------------------------------- REGISTER ENDS -------------------------------------*/
 
 /* ------------------------------------- LOCAATION START -------------------------------------*/
+
 .location .box-container{
     display: flex;
     flex-wrap: wrap;
@@ -374,10 +422,10 @@ header .navbar a:hover{
 
 .location .map{
     flex: 1 1 40rem;
-    padding: 3rem;
 }
 
 .location .map iframe{
+    object-fit: cover;
     width: 100%;
     border-radius: 1rem;   
     box-shadow: var(--box-shadow);
@@ -385,13 +433,13 @@ header .navbar a:hover{
 
 .location .details{
     flex: 1 1 15rem;
-    text-align: right;
+    text-align: center;
 }
 
 .location .details h1{
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: var(--title);
+    color: var(--black);
     letter-spacing: .2rem;
 }
 
@@ -402,6 +450,7 @@ header .navbar a:hover{
 .location .details p{
     font-size: 1.5rem;
     margin-top: 1rem;
+    color: var(--black);
 }
 /* ------------------------------------- LOCATION ENDS -------------------------------------*/
 /* ------------------------------------- REVIEWS STARTS -------------------------------------*/
@@ -409,7 +458,9 @@ header .navbar a:hover{
     text-align: center;
 }
 
+
 .reviews .review-slider .box{
+    background-color: var(--pure-white);
     outline: var(--border);
     outline-offset: -1rem;
     cursor: pointer;
@@ -418,52 +469,67 @@ header .navbar a:hover{
     box-shadow: var(--box-shadow);
     font-size: 2rem;
     margin-bottom: 1.5rem;
+    border-radius: .5rem;
+}
+
+.reviews .review-slider .box h3{
+    color: var(--black);
+    margin-bottom: 1rem;
 }
 
 .reviews .review-slider .box .stars{
-    color: var(--title);
+    color: var(--brown);
     font-size: 1.5rem;
 }
 .reviews .review-slider .box p{
     font-size: 1.5rem;
     line-height: 1.5;
+    color: var(--black);
+    margin-top: .5rem;
 }
 /* ------------------------------------- REVIEWS ENDS -------------------------------------*/
 
 /* ------------------------------------- AMENITIES STARTS -------------------------------------*/
-.amenities{
-    background-color: var(--title);
-    background-image: var(--gradient);
-    color: var(--white);
-}
 
 .amenities h1{
     text-align: center;
-    color: var(--white);
+    color: var(--title);
 }
 
 .amenities .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    gap: 2rem;
-    padding-bottom: 2rem;
-
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
 }  
 
 .amenities .box-container .box{
-    margin: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: rgb(251, 251, 251);
+    box-shadow: var(--box-shadow); 
+    border: .1px solid var(--title);
+}
+
+.amenities .box-container .box .image{
+    margin: 0 auto;
+
+}
+
+.amenities .box-container .box i{
+    font-size: 8rem;
 }
 
 .amenities .box-container .box h3{
     font-size: 2.5rem;
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin: 1.5rem 0;
+    color: var(--black);
 }
 
 .amenities .box-container .box p{
-    font-size: 2rem;
-    line-height: 1;
-
+    font-size: 1.5rem;
+    color: var(--black);
 }
 
 
@@ -471,8 +537,10 @@ header .navbar a:hover{
 
 /* ------------------------------------- FOOTER STARTS -------------------------------------*/
 .footer{
+    background-color: var(--white-bg);
     text-align: center;
-    background: #fff;
+    margin-top: 2rem;
+    color: var(--black);
 }
 
 .footer .box-container{
@@ -488,11 +556,11 @@ header .navbar a:hover{
 .footer .icons a i{
     font-size: 4rem;
     margin: 0 2rem;
-    color: var(--title);
+    color: var(--black);
 }
 
 .footer .icons a i:hover{
-    color: var(--hover);
+    color: var(--brown);
 }
 
 .footer p{
@@ -654,4 +722,16 @@ header .navbar a:hover{
         text-align: left;
         margin: 2rem 3rem;
     }
+
+    .resort .room-details{
+        width: 100%;
+    }
+
+    .register .box-container .register-form .btn-link{
+        display: block;
+     }
+
+     .register .box-container .register-form .btn-link .btn{
+        margin-bottom: .5rem;
+     }
 } 
