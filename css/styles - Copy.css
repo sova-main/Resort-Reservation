@@ -410,6 +410,7 @@ header .navbar a:hover{
 }
 
 .reviews .review-slider .box{
+    gap: 3rem;
     outline: var(--border);
     outline-offset: -1rem;
     cursor: pointer;
@@ -572,23 +573,17 @@ header .navbar a:hover{
 
     header .navbar{
         position: absolute;
-        top: 8%;
-        right: 2.5rem;
+        top: 5%;
+        right: -500%;
         width: 20rem;
-        box-shadow: var(--box-shadow);
-        border: var(--border);
         background: var(--white);
-        transform: scale(0);
-        transform-origin: top right;
-        opacity: 0;
-        transition: none;
-        
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
     }
 
     .header .navbar.active{
-        transform: scale(1);
-        opacity: 1;
-        transition: .2s ease-out;
+        right: 5%;
+        transition: .2s linear;
     }
 
     .header .navbar a{

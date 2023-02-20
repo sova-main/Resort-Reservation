@@ -25,6 +25,7 @@ checkInInput.addEventListener('input', (event) => {
 });
 
 
+
 // get copyright year
 
 const year = document.getElementById('year');
@@ -34,9 +35,9 @@ year.textContent = currentYear;
 
 var swiper = new Swiper(".review-slider", {
   loop: true,
+  spaceBetween: 30,
   autoplay: {
       delay: 7500,
-      disableOnInteraction: false,
   },
   breakpoints: {
     0: {
