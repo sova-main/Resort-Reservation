@@ -37,7 +37,7 @@ var swiper = new Swiper(".review-slider", {
   loop: true,
   spaceBetween: 30,
   autoplay: {
-      delay: 5000,
+      delay: 5000
   },
   breakpoints: {
     0: {
@@ -51,3 +51,4 @@ var swiper = new Swiper(".review-slider", {
     },
   },
 });
+
