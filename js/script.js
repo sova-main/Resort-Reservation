@@ -1,3 +1,4 @@
+
 let navbar = document.querySelector('.header .navbar');
 
 document.querySelector('#menu-btn').onclick = () =>{
@@ -30,25 +31,6 @@ checkInInput.addEventListener('input', (event) => {
 
 const year = document.getElementById('year');
 const currentYear = new Date().getFullYear();
-
 year.textContent = currentYear;
 
-var swiper = new Swiper(".review-slider", {
-  loop: true,
-  spaceBetween: 30,
-  autoplay: {
-      delay: 5000
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1020: {
-      slidesPerView: 3, 
-    },
-  },
-});
 
