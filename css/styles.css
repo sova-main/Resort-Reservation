@@ -12,6 +12,7 @@ background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);  */
     --pure-white: #fff;
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     --border: .2rem solid rgba(0, 0, 0, .1);
+    --gray: #bebebe;
 }
 
 *{
@@ -877,7 +878,7 @@ opacity: 1;
 
 .contact .box-container .formBox{
     flex: 1 1 40rem;
-    padding: 3rem 2rem;
+    padding: 4rem 5rem;
 }
 
 .contact .box-container .formBox h1{
@@ -898,13 +899,13 @@ opacity: 1;
     padding: 1rem 2rem;
     border-radius: 1rem;
     width: 100%;
-    border: 1px solid var(--black);
+    border: var(--border);
 }
 
 .contact .box-container .formBox form textarea{
     margin-top: .5rem;
     width: 100%;
-    border: 1px solid var(--black);
+    border: var(--border);
     border-radius: 1rem;
     padding: .5rem 1rem;
     font-size: 1.5rem;
@@ -942,6 +943,117 @@ opacity: 1;
 }
 
 /* ------------------------------------- CONTACT ENDS -------------------------------------*/
+
+
+
+
+
+
+/* ------------------------------------- LOGIN STARTS -------------------------------------*/
+.login{
+    margin: 7.9rem 0;
+}
+.login .box-container{
+    background-color: #fff;
+    width: 80%;
+    box-shadow: var(--box-shadow);
+    padding: 3rem 5rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+.login .box-container .login-header{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.login .box-container .login-header p{
+    margin-top: 1rem;
+    color: #bebebe;
+}
+
+.login .box-container form{
+    width: 50%;
+    margin: 3rem auto;
+    text-align: right;
+}
+
+
+.login .box-container form .loginBox{
+    text-align: left;
+}
+
+.login .box-container form .loginBox input{
+    width: 100%;
+    padding: 1rem 2rem;
+    border: var(--border);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.login .box-container form .loginBox label{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.login .box-container form a{
+    color: var(--gray);
+    font-size: 1.5rem;
+}
+
+.login .box-container form button{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    background-color: var(--black);
+    color: var(--white);
+    transition: outline .2s ease-in-out;
+}
+
+.login .box-container form button:hover{
+    transition: .2s ease-in-out;
+    outline: 1px solid var(--black);
+    background-color: #fff;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.login .box-container .signUpParagraph{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--gray);
+}
+.login .box-container .signUpParagraph a{
+    font-weight: 500;
+    color: var(--black);
+}
+
+/* ------------------------------------- LOGIN ENDS -------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1172,6 +1284,10 @@ opacity: 1;
         border-radius: 0;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
+     }
+
+     .login .box-container, .login .box-container form{
+        width: 100%;
      }
 
      
